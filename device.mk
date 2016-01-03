@@ -90,10 +90,6 @@ PRODUCT_PACKAGES += \
     make_ext4fs \
     setup_fs
 
-# GPS
-PRODUCT_PACKAGES += \
-    libdmitry
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml \
