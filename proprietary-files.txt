@@ -245,6 +245,8 @@ bin/mdm_helper_proxy
 bin/rild
 lib/libril.so
 lib64/libril.so
+lib/libreference-ril.so
+lib64/libreference-ril.so
 lib/libsecnativefeature.so
 lib64/libsecnativefeature.so
 lib/libsec-ril.so
