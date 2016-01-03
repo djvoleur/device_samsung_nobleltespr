@@ -5,16 +5,6 @@ etc/firmware/clearwater-dsp3-tx-wb.bin
 etc/firmware/clearwater-dsp4-rx-anc-nb.bin
 etc/firmware/clearwater-dsp4-rx-anc-wb.bin
 etc/firmware/clearwater-dsp6-lpsd-control.bin
-etc/firmware/clearwatera-dsp2-tx-nb.wmfw
-etc/firmware/clearwatera-dsp2-tx-swb.wmfw
-etc/firmware/clearwatera-dsp2-tx-wb.wmfw
-etc/firmware/clearwatera-dsp3-tx-nb.wmfw
-etc/firmware/clearwatera-dsp3-tx-swb.wmfw
-etc/firmware/clearwatera-dsp3-tx-wb.wmfw
-etc/firmware/clearwatera-dsp4-rx-anc-nb.wmfw
-etc/firmware/clearwatera-dsp4-rx-anc-wb.wmfw
-etc/firmware/clearwatera-dsp5-dsm.wmfw
-etc/firmware/clearwatera-dsp6-ez2-control.wmfw
 etc/firmware/clearwaterc-dsp2-tx-nb.wmfw
 etc/firmware/clearwaterc-dsp2-tx-swb.wmfw
 etc/firmware/clearwaterc-dsp2-tx-wb.wmfw
@@ -25,29 +15,39 @@ etc/firmware/clearwaterc-dsp4-rx-anc-nb.wmfw
 etc/firmware/clearwaterc-dsp4-rx-anc-wb.wmfw
 etc/firmware/clearwaterc-dsp5-dsm.wmfw
 etc/firmware/clearwaterc-dsp6-ez2-control.wmfw
-etc/firmware/florida-dsp1-edac.bin
-etc/firmware/florida-dsp1-edac.wmfw
-etc/firmware/florida-dsp2-tx-fb-meeting.bin
-etc/firmware/florida-dsp2-tx-fb-meeting.wmfw
-etc/firmware/florida-dsp2-tx-nb.wmfw
-etc/firmware/florida-dsp2-tx-swb.wmfw
-etc/firmware/florida-dsp2-tx-wb.wmfw
-etc/firmware/florida-dsp3-ez2-control.wmfw
-etc/firmware/florida-dsp3-lpsd-control.bin
-etc/firmware/florida-dsp3-tx-nb.bin
-etc/firmware/florida-dsp3-tx-nb.wmfw
-etc/firmware/florida-dsp3-tx-swb-conversation.bin
-etc/firmware/florida-dsp3-tx-swb-interview.bin
-etc/firmware/florida-dsp3-tx-swb.wmfw
-etc/firmware/florida-dsp3-tx-wb-meeting.bin
-etc/firmware/florida-dsp3-tx-wb-meeting.wmfw
-etc/firmware/florida-dsp3-tx-wb.bin
-etc/firmware/florida-dsp3-tx-wb.wmfw
-etc/firmware/florida-dsp4-dsm.wmfw
-etc/firmware/florida-dsp4-rx-anc-nb.bin
-etc/firmware/florida-dsp4-rx-anc-nb.wmfw
-etc/firmware/florida-dsp4-rx-anc-wb.bin
-etc/firmware/florida-dsp4-rx-anc-wb.wmfw
+#etc/firmware/clearwatera-dsp2-tx-nb.wmfw not in nobleltespr
+#etc/firmware/clearwatera-dsp2-tx-swb.wmfw not in nobleltespr
+#etc/firmware/clearwatera-dsp2-tx-wb.wmfw not in nobleltespr
+#etc/firmware/clearwatera-dsp3-tx-nb.wmfw not in nobleltespr
+#etc/firmware/clearwatera-dsp3-tx-swb.wmfw not in nobleltespr
+#etc/firmware/clearwatera-dsp3-tx-wb.wmfw not in nobleltespr
+#etc/firmware/clearwatera-dsp4-rx-anc-nb.wmfw not in nobleltespr
+#etc/firmware/clearwatera-dsp4-rx-anc-wb.wmfw not in nobleltespr
+#etc/firmware/clearwatera-dsp5-dsm.wmfw not in nobleltespr
+#etc/firmware/clearwatera-dsp6-ez2-control.wmfw not in nobleltespr
+#etc/firmware/florida-dsp1-edac.bin not in nobleltespr
+#etc/firmware/florida-dsp1-edac.wmfw not in nobleltespr
+#etc/firmware/florida-dsp2-tx-fb-meeting.bin not in nobleltespr
+#etc/firmware/florida-dsp2-tx-fb-meeting.wmfw not in nobleltespr
+#etc/firmware/florida-dsp2-tx-nb.wmfw not in nobleltespr
+#etc/firmware/florida-dsp2-tx-swb.wmfw not in nobleltespr
+#etc/firmware/florida-dsp2-tx-wb.wmfw not in nobleltespr
+#etc/firmware/florida-dsp3-ez2-control.wmfw not in nobleltespr
+#etc/firmware/florida-dsp3-lpsd-control.bin not in nobleltespr
+#etc/firmware/florida-dsp3-tx-nb.bin not in nobleltespr
+#etc/firmware/florida-dsp3-tx-nb.wmfw not in nobleltespr
+#etc/firmware/florida-dsp3-tx-swb-conversation.bin not in nobleltespr
+#etc/firmware/florida-dsp3-tx-swb-interview.bin not in nobleltespr
+#etc/firmware/florida-dsp3-tx-swb.wmfw not in nobleltespr
+#etc/firmware/florida-dsp3-tx-wb-meeting.bin not in nobleltespr
+#etc/firmware/florida-dsp3-tx-wb-meeting.wmfw not in nobleltespr
+#etc/firmware/florida-dsp3-tx-wb.bin not in nobleltespr
+#etc/firmware/florida-dsp3-tx-wb.wmfw not in nobleltespr
+#etc/firmware/florida-dsp4-dsm.wmfw not in nobleltespr
+#etc/firmware/florida-dsp4-rx-anc-nb.bin not in nobleltespr
+#etc/firmware/florida-dsp4-rx-anc-nb.wmfw not in nobleltespr
+#etc/firmware/florida-dsp4-rx-anc-wb.bin not in nobleltespr
+#etc/firmware/florida-dsp4-rx-anc-wb.wmfw not in nobleltespr
 vendor/etc/nxp/AzControlParams_SPEAKER.txt
 vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt
 vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt
@@ -116,9 +116,14 @@ vendor/firmware/seiren_fw_dram.bin
 vendor/firmware/seiren_fw_sram.bin
 
 # Bluetooth
-vendor/firmware/bcm4358A0_V0009.0033.hcd
-vendor/firmware/bcm4358A1_V0041.0075.hcd
-vendor/firmware/bcm4358A3_V0036.0054.hcd
+vendor/firmware/bcm4359B0_V0019.0000.hcd
+vendor/firmware/bcm4359B1_V0030.0044.hcd
+vendor/firmware/bcm4359B1_V0043.0055.hcd
+vendor/firmware/bcm4359B1_V0030.0044_wisol.hcd
+vendor/firmware/bcm4359B1_V0043.0055_wisol.hcd
+#vendor/firmware/bcm4358A0_V0009.0033.hcd not in nobleltespr
+#vendor/firmware/bcm4358A1_V0041.0075.hcd not in nobleltespr
+#vendor/firmware/bcm4358A3_V0036.0054.hcd not in nobleltespr
 
 # Camera
 #lib/hw/camera.exynos5.so
@@ -137,14 +142,10 @@ lib/libuniplugin.so
 lib64/libuniplugin.so
 
 # Consumer IR
-lib/hw/consumerir.exynos5.so
-lib64/hw/consumerir.exynos5.so
+#lib/hw/consumerir.exynos5.so not in nobleltespr
+#lib64/hw/consumerir.exynos5.so not in nobleltespr
 
 # Graphics
-lib/hw/gralloc.exynos5.so
-lib64/hw/gralloc.exynos5.so
-lib/hw/hwcomposer.exynos5.so
-lib64/hw/hwcomposer.exynos5.so
 lib/libexynosgscaler.so
 lib/libexynosscaler.so
 lib/libexynosutils.so
@@ -155,12 +156,28 @@ vendor/lib/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_mali.so
 
 # GPS
-bin/gps.cer
-bin/gpsd
-bin/lhd
-lib64/hw/gps.universal7420.so
+#bin/gps.cer not in nobleltespr
+#bin/gpsd not in nobleltespr
+#bin/lhd not in nobleltespr
+#lib64/hw/gps.universal7420.so not in nobleltespr
+bin/cellgeofenced
+lib/hw/cellgeofence.default.so
+lib64/hw/cellgeofence.default.so
+lib64/slocation/libsgeo.so
+lib/libgps.utils.so
+lib64/libgps.utils.so
+lib/libloc_core.so
+lib64/libloc_core.so
 lib/libwrappergps.so
 lib64/libwrappergps.so
+vendor/lib/libgeofence.so
+vendor/lib64/libgeofence.so
+vendor/lib64/libizat_core.so
+vendor/lib/libizat_core.so
+vendor/lib64/liblbs_core.so
+vendor/lib/liblbs_core.so
+vendor/lib64/liblbs_core.so
+vendor/lib/liblbs_core.so
 
 # Media
 vendor/firmware/fimc_is_fw2_imx240.bin
@@ -190,13 +207,14 @@ app/mcRegistry/ffffffff00000000000000000000000f.tlbin
 app/mcRegistry/ffffffff000000000000000000000012.tlbin
 app/mcRegistry/ffffffff000000000000000000000013.tlbin
 app/mcRegistry/ffffffff000000000000000000000014.tlbin
-#app/mcRegistry/ffffffff000000000000000000000015.tlbin
 app/mcRegistry/ffffffff000000000000000000000016.tlbin
 app/mcRegistry/ffffffff000000000000000000000017.tlbin
 app/mcRegistry/ffffffff000000000000000000000018.tlbin
 app/mcRegistry/ffffffff000000000000000000000019.tlbin
 app/mcRegistry/ffffffff00000000000000000000001f.tlbin
 app/mcRegistry/ffffffff000000000000000000000021.tlbin
+app/mcRegistry/ffffffff000000000000000000000028.tlbin
+app/mcRegistry/ffffffff00000000000000000000002a.tlbin
 app/mcRegistry/ffffffffd00000000000000000000004.tlbin
 app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
 app/mcRegistry/ffffffffd0000000000000000000000e.tlbin
@@ -210,13 +228,23 @@ lib/libMcClient.so
 lib64/libMcClient.so
 
 # NFC
-etc/sec_s3fwrn5p_rfreg.bin
 lib/hw/nfc_nci.universal7420.so
 lib64/hw/nfc_nci.universal7420.so
-vendor/firmware/sec_s3fwrn5p_firmware.bin
+etc/sec_s3fwrn5s_rfreg.bin  
+etc/sec_s3fwrn5s_rfreg_for_old_hw.bin
+vendor/firmware/sec_s3fwrn5s_firmware.bin
+#etc/sec_s3fwrn5p_rfreg.bin not in nobleltespr
+#vendor/firmware/sec_s3fwrn5p_firmware.bin not in nobleltespr
 
 # Radio
-bin/cbd
+#bin/cbd not in nobleltespr
+bin/argosd
+bin/irsc_util
+bin/mdm_helper
+bin/mdm_helper_proxy
+bin/rild
+lib/libril.so
+lib64/libril.so
 lib/libsecnativefeature.so
 lib64/libsecnativefeature.so
 lib/libsec-ril.so
@@ -225,41 +253,57 @@ lib/libsecril-client.so
 lib64/libsecril-client.so
 
 # Sensors
-lib/hw/sensors.universal7420.so
-lib64/hw/sensors.universal7420.so
+#lib/hw/sensors.universal7420.so disable for now
+#lib64/hw/sensors.universal7420.so disable for now
 
 # Widevine
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/libdrmdecrypt.so
+#vendor/lib/drm/libdrmwvmplugin.so not in nobleltespr
+#vendor/lib/libdrmdecrypt.so not in nobleltespr
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Wifi
-etc/wifi/bcmdhd_apsta.bin
-etc/wifi/bcmdhd_apsta.bin_a1
-etc/wifi/bcmdhd_ibss.bin
-etc/wifi/bcmdhd_ibss.bin_a1
-etc/wifi/bcmdhd_mfg.bin
-etc/wifi/bcmdhd_mfg.bin_a1
-etc/wifi/bcmdhd_sta.bin
-etc/wifi/bcmdhd_sta.bin_a1
-etc/wifi/nvram_mfg.txt
-etc/wifi/nvram_mfg.txt_a1
-etc/wifi/nvram_mfg.txt_b85_a1
-etc/wifi/nvram_mfg.txt_murata
-etc/wifi/nvram_mfg.txt_murata_a1
-etc/wifi/nvram_mfg.txt_murata_b85_a1
-etc/wifi/nvram_mfg.txt_wisol
-etc/wifi/nvram_mfg.txt_wisol_a1
-etc/wifi/nvram_mfg.txt_wisol_b85_a1
-etc/wifi/nvram_net.txt
-etc/wifi/nvram_net.txt_a1
-etc/wifi/nvram_net.txt_b85_a1
-etc/wifi/nvram_net.txt_murata
-etc/wifi/nvram_net.txt_murata_a1
-etc/wifi/nvram_net.txt_murata_b85_a1
-etc/wifi/nvram_net.txt_wisol
-etc/wifi/nvram_net.txt_wisol_a1
-etc/wifi/nvram_net.txt_wisol_b85_a1
+etc/wifi/bcmdhd_apsta.bin_b1
+etc/wifi/bcmdhd_ibss.bin_b0
+etc/wifi/bcmdhd_ibss.bin_b1
+etc/wifi/bcmdhd_mfg2.bin_b1
+etc/wifi/bcmdhd_mfg.bin_b0
+etc/wifi/bcmdhd_mfg.bin_b1
+etc/wifi/bcmdhd_sta.bin_b0
+etc/wifi/bcmdhd_sta.bin_b1
+etc/wifi/nvram_mfg.txt_b0
+etc/wifi/nvram_mfg.txt_b1
+etc/wifi/nvram_mfg.txt_murata_b1
+etc/wifi/nvram_mfg.txt_wisol_b1
+etc/wifi/nvram_net.txt_b0
+etc/wifi/nvram_net.txt_b1
+etc/wifi/nvram_net.txt_murata_b1
+etc/wifi/nvram_net.txt_wisol_b1
+#etc/wifi/bcmdhd_apsta.bin not in nobleltespr
+#etc/wifi/bcmdhd_apsta.bin_a1 not in nobleltespr
+#etc/wifi/bcmdhd_ibss.bin not in nobleltespr
+#etc/wifi/bcmdhd_ibss.bin_a1 not in nobleltespr
+#etc/wifi/bcmdhd_mfg.bin not in nobleltespr
+#etc/wifi/bcmdhd_mfg.bin_a1 not in nobleltespr
+#etc/wifi/bcmdhd_sta.bin not in nobleltespr
+#etc/wifi/bcmdhd_sta.bin_a1 not in nobleltespr
+#etc/wifi/nvram_mfg.txt not in nobleltespr
+#etc/wifi/nvram_mfg.txt_a1 not in nobleltespr
+#etc/wifi/nvram_mfg.txt_b85_a1 not in nobleltespr
+#etc/wifi/nvram_mfg.txt_murata not in nobleltespr
+#etc/wifi/nvram_mfg.txt_murata_a1 not in nobleltespr
+#etc/wifi/nvram_mfg.txt_murata_b85_a1 not in nobleltespr
+#etc/wifi/nvram_mfg.txt_wisol not in nobleltespr
+#etc/wifi/nvram_mfg.txt_wisol_a1 not in nobleltespr
+#etc/wifi/nvram_mfg.txt_wisol_b85_a1 not in nobleltespr
+#etc/wifi/nvram_net.txt not in nobleltespr
+#etc/wifi/nvram_net.txt_a1 not in nobleltespr
+#etc/wifi/nvram_net.txt_b85_a1 not in nobleltespr
+#etc/wifi/nvram_net.txt_murata not in nobleltespr
+#etc/wifi/nvram_net.txt_murata_a1 not in nobleltespr
+#etc/wifi/nvram_net.txt_murata_b85_a1 not in nobleltespr
+#etc/wifi/nvram_net.txt_wisol not in nobleltespr
+#etc/wifi/nvram_net.txt_wisol_a1 not in nobleltespr
+#etc/wifi/nvram_net.txt_wisol_b85_a1 not in nobleltespr
