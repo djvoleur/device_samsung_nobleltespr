@@ -104,7 +104,6 @@ TARGET_SLSI_VARIANT := blobs
 
 # Radio
 BOARD_VENDOR := samsung
-BOARD_PROVIDES_LIBRIL := true
 BOARD_RIL_CLASS := ../../../$(NOBLELTE_PATH)/ril
 
 # Recovery
