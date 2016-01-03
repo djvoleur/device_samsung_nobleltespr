@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-TARGET_OTA_ASSERT_DEVICE := noblelte, nobleltespr
+TARGET_OTA_ASSERT_DEVICE := noblelte,nobleltespr
 
 NOBLELTE_PATH := device/samsung/nobleltespr
 
