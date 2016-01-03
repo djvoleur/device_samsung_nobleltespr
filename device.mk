@@ -90,9 +90,7 @@ PRODUCT_PACKAGES += \
     setup_fs
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml \
-    $(LOCAL_PATH)/configs/lhd.conf:system/etc/lhd.conf
+    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
@@ -139,7 +137,6 @@ PRODUCT_PACKAGES += \
     fstab.samsungexynos7420 \
     init.baseband.rc \
     init.carrier.rc \
-    init.gps.rc \
     init.samsungexynos7420.rc \
     init.samsungexynos7420.usb.rc \
     init.wifi.rc \
