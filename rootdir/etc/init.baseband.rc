@@ -47,6 +47,44 @@ on fs
 
     mount tmpfs tmpfs /cpdump size=150M,mode=0700,uid=0,gid=0
 
+service diag_uart_log /system/bin/diag_uart_log
+    class main
+    user root
+    group radio
+
+# QMUX must be in multiple groups to support external process connections
+service qmuxd /system/bin/qmuxd
+    class main
+    user root
+    group radio audio bluetooth gps qcom_diag
+
+service diag_mdlog_start /system/bin/diag_mdlog
+    class late_start
+    user sdcard_rw
+    group system qcom_diag sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service diag_mdlog_stop /system/bin/diag_mdlog -k
+    class late_start
+    user sdcard_rw
+    group system qcom_diag sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service ril-daemon1 /system/bin/rild -c 2
+    class main
+    socket rild2 stream 660 root radio
+    socket rild-debug2 stream 660 radio system
+    user root
+    group radio cache inet misc audio log qcom_diag system drmrpc sdcard_r sdcard_rw diag
+    disabled
+
+service atfwd /system/bin/ATFWD-daemon
+    class late_start
+    user system
+    group system radio
+
 service mdm_helper /system/bin/mdm_helper
     class core
     onrestart setprop ro.service.mdm_helper_restarted "true"
