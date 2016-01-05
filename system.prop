@@ -15,11 +15,30 @@ rilswitch.vendorlibpath=/system/lib64/libsec-ril.so
 rilswitch.cfilibpath=/system/lib64/libcfiril.so
 rild.libargs=-d /dev/smdS0
 ril.subscription.types=NV,RUIM
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.add_power_save=1
+persist.radio.snapshot_enabled=1
+persist.radio.snapshot_timer=22
+ro.ril.ecclist=911,#911,*911
+persist.rmnet.mux=enabled
+telephony.lteOnCdmaDevice=1
 ro.telephony.default_network=10
 ro.use_data_netmgrd=false
 persist.data.netmgrd.qos.enable=false
+ro.config.combined_signal=true
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
+ro.telephony.default_cdma_sub=1
+
+# Carrier definitions
+ro.cdma.home.operator.numeric=310120
+ro.cdma.home.operator.alpha=Sprint
+gsm.sim.operator.alpha=Sprint
+gsm.sim.operator.numeric=310120
+gsm.sim.operator.iso-country=us
+gsm.operator.alpha=Sprint
+gsm.operator.numeric=310120
+gsm.operator.iso-country=us
 
 # Wifi
 wifi.interface=wlan0
