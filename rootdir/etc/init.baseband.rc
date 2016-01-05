@@ -47,6 +47,22 @@ on fs
 
     mount tmpfs tmpfs /cpdump size=150M,mode=0700,uid=0,gid=0
 
+# AT Distributor for factory test
+service at_distributor /system/bin/at_distributor
+    class late_start
+    user root
+    group radio misc log
+
+service DR-daemon /system/bin/ddexe
+    class main
+    user root
+    group system radio inet net_raw
+
+service BCS-daemon /system/bin/connfwexe
+    class main
+    user root
+    group system radio inet net_raw
+
 service diag_uart_log /system/bin/diag_uart_log
     class main
     user root
