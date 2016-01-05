@@ -138,5 +138,8 @@ WIFI_DRIVER_NVRAM_PATH           := "/etc/wifi/nvram_net.txt_b0"
 WIFI_DRIVER_FW_PATH_STA          := "/etc/wifi/bcmdhd_sta.bin_b0"
 WIFI_DRIVER_FW_PATH_AP           := "/etc/wifi/bcmdhd_apsta.bin_b1"
 
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
 # inherit from the proprietary version
 -include vendor/samsung/nobleltespr/BoardConfigVendor.mk
