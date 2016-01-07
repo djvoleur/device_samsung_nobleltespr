@@ -10,10 +10,8 @@ ro.opengles.version=196609
 ro.nfc.sec_hal=true
 
 # Radio
-rild.libpath=/system/lib64/librilswitch.so
-rilswitch.vendorlibpath=/system/lib64/libsec-ril.so
-rilswitch.cfilibpath=/system/lib64/libcfiril.so
-rild.libargs=-d /dev/smdS0
+rild.libpath=/system/lib64/libsec-ril.so
+rild.libargs=-d /dev/smd0
 ril.subscription.types=NV,RUIM
 persist.radio.apm_sim_not_pwdn=1
 persist.radio.add_power_save=1
